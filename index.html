@@ -146,7 +146,7 @@
 <!-- video -->
 <section class="section">
   <div class="columns is-centered has-text-centered" style="max-width: 1000px; margin: 0 auto;">
-    <div class="column  is-full-width">
+    <div class="column is-full-width">
       <!-- <h2 class="title is-2">Video</h2> -->
       <div class="publication-video">
         <iframe src="https://www.youtube.com/embed/vXls0dcav2Y?si=JPFkuVPvHK5WenLe"
@@ -187,12 +187,11 @@
 </section> -->
 
 <!-- Highlight -->
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="rows is-centered has-text-centered ">
       <div class="row is-full-width">
         <h2 class="title is-3 has-text-centered is-size-5-mobile title-with-lines">Highlight</h2>
-          <!-- <img src="./static/images/overview.png" alt="method" style="width: 75%;"></img> -->
           <br/>
           <br/>
           <div class="content has-text-justified" style="font-size: 17px;margin: 0 auto;margin-bottom: 1em;">
@@ -204,7 +203,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- method -->
 <section class="section">
@@ -326,18 +325,69 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="rows is-centered has-text-centered ">
-      <div class="row is-full-width">
-        <h2 class="title is-3 has-text-centered is-size-5-mobile title-with-lines">Evaluation in Simulation</h2>
+      <div class="row is-full-width has-text-centered">
+        <h2 class="title is-3 is-size-5-mobile title-with-lines">Evaluation in Simulation</h2>
         
         <h3 class="title is-4 has-text-centered is-size-5-mobile">Quantitative Results</h3>
-        <img src="./static/images/exp_sim.png" alt="method" style="width: 100%;"></img>
+        <img src="./static/images/exp_sim.png" alt="method" style="width: 80%;"></img>
 
-        TODO
         <br/>
+        <br/>
+
+
+        <div class="content has-text-justified" style="font-size: 17px;margin: 0 auto;margin-bottom: 1em;">
+          <p>
+            We evaluate our method on two public VLN-CE benchmarks collected from Matterport3D scenes using the Habitat simulator: <b>R2R-CE</b> and <b>RxR-CE</b>. 
+            Our <b>StreamVLN</b> model achieves state-of-the-art performance among RGB-only methods both without and with extra navigation datasets, reaching <b>56.9%</b> SR and <b>51.9%</b> SPL on R2R (Val-Unseen), and <b>52.9%</b> SR and <b>46.0%</b> SPL on RxR (Val-Unseen).
+          </p>
+        </div>
+
         <br/>
 
         <h3 class="title is-4 has-text-centered is-size-5-mobile">Vision-Language Navigation in Habitat Simulator</h3>
-        TODO
+
+          <div class="container is-full-width">
+      
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item item-box">
+                <video poster="" id="box" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/sim_0.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-drawer">
+                <video poster="" id="drawer" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/sim_1.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-dustpan">
+                <video poster="" id="dustpan" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/sim_2.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-fridge">
+                <video poster="" id="fridge" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/sim_3.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-handover_easy">
+                <video poster="" id="handover_easy" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/sim_4.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-handover">
+                <video poster="" id="handover" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/sim_5.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+            </div>
+      
+          </div>
 
       </div>
     </div>
@@ -358,7 +408,7 @@
         <div class="card">
           <div class="card-image">
             <video controls muted loop playsinline autoplay>
-              <source src="./static/videos/realworld_7.mp4" type="video/mp4">
+              <source src="./static/videos/home_0.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-content has-text-centered">
@@ -371,7 +421,7 @@
         <div class="card">
           <div class="card-image">
             <video controls muted loop playsinline autoplay>
-              <source src="./static/videos/realworld_8.mp4" type="video/mp4">
+              <source src="./static/videos/home_1.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-content has-text-centered">
@@ -390,7 +440,7 @@
         <div class="card">
           <div class="card-image">
             <video controls muted loop playsinline autoplay>
-              <source src="./static/videos/realworld_0.mp4" type="video/mp4">
+              <source src="./static/videos/workspace_0.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-content has-text-centered">
@@ -403,7 +453,7 @@
         <div class="card">
           <div class="card-image">
             <video controls muted loop playsinline autoplay>
-              <source src="./static/videos/realworld_1.mp4" type="video/mp4">
+              <source src="./static/videos/workspace_1.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-content has-text-centered">
@@ -421,7 +471,7 @@
         <div class="card">
           <div class="card-image">
             <video controls muted loop playsinline autoplay>
-              <source src="./static/videos/realworld_3.mp4" type="video/mp4">
+              <source src="./static/videos/mall.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-content has-text-centered">
@@ -434,7 +484,7 @@
         <div class="card">
           <div class="card-image">
             <video controls muted loop playsinline autoplay>
-              <source src="./static/videos/realworld_4.mp4" type="video/mp4">
+              <source src="./static/videos/outdoor_0.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-content has-text-centered">
@@ -447,7 +497,7 @@
         <div class="card">
           <div class="card-image">
             <video controls muted loop playsinline autoplay>
-              <source src="./static/videos/realworld_5.mp4" type="video/mp4">
+              <source src="./static/videos/outdoor_1.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-content has-text-centered">
@@ -460,7 +510,7 @@
         <div class="card">
           <div class="card-image">
             <video controls muted loop playsinline autoplay>
-              <source src="./static/videos/realworld_6.mp4" type="video/mp4">
+              <source src="./static/videos/outdoor_2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-content has-text-centered">
@@ -472,9 +522,9 @@
     </div>
     <br/>
 
-    <h3 class="title is-4 has-text-centered is-size-5-mobile">Vision Reasoning</h3>
-    <div class="columns is-multiline">
-      <div class="column is-half">
+    <h3 class="title is-4 has-text-centered is-size-5-mobile">Visual Reasoning</h3>
+    <div class="columns is-multiline is-centered">
+      <!-- <div class="column is-half">
         <div class="card">
           <div class="card-image">
             <video controls muted loop playsinline autoplay>
@@ -485,13 +535,13 @@
             <p class="title is-5">Distinguish between Mona Lisa and Einstein</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="column is-half">
         <div class="card">
           <div class="card-image">
             <video controls muted loop playsinline autoplay>
-              <source src="./static/videos/realworld_2.mp4" type="video/mp4">
+              <source src="./static/videos/visual_reasoning.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-content has-text-centered">
