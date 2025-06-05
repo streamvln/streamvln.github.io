@@ -155,7 +155,7 @@
       <br/>
       <h2 class="title is-5">TL; DR</h2>
       <h2 class="subtitle has-text-centered">
-        StreamVLN introduces a hybrid <b>slow-fast</b> architecture for real-time Vision-and-Language Navigation, balancing fine-grained visual understanding, long-term memory, and low-latency action generation.
+        StreamVLN is a streaming VLN framework that employs a hybrid slow-fast context modeling strategy to support multi-modal reasoning over interleaved vision, language and action inputs.
       </h2>
     </div>
   </div>
@@ -218,11 +218,8 @@
         <br/>
         <div class="content has-text-justified" style="font-size: 17px;margin: 0 auto;margin-bottom: 1em;">
           <p>
-            <b>StreamVLN</b> applies a hybrid slow-fast context modeling strategy to generate action outputs from continuous video input in an online, multi-turn dialogue manner.
-          </p>
-          <p>
-            The slow-fast design consists of two components: (1) a <b>fast-streaming dialogue context</b> with a sliding-window KV cache; and (2) a <b>slow-updating memory context</b> via token pruning.
-            As shown in the figure above, the fast-streaming dialogue context facilitates responsive action generation through a sliding-window of active dialogues, while the slow-updating memory context compresses historical visual states using a 3D-aware token pruning strategy.             
+            <b>StreamVLN</b> generates action outputs from continuous video input in an online, multi-turn dialogue manner. Built on LLaVA-Video as the foundational Video-LLM, we extend it for interleaved vision, language, and action modeling.
+            For both effective context modeling of long sequence and efficient computation for real-time interaction, StreamVLN has: <b>(1)</b> a fast-streaming dialogue context with a sliding-window KV cache; and <b>(2)</b> a slow-updating memory via token pruning.
           </p>
         </div>
         <br/>
@@ -329,7 +326,7 @@
         <h2 class="title is-3 is-size-5-mobile title-with-lines">Evaluation in Simulation</h2>
         
         <h3 class="title is-4 has-text-centered is-size-5-mobile">Quantitative Results</h3>
-        <img src="./static/images/exp_sim.png" alt="method" style="width: 80%;"></img>
+        <img src="./static/images/exp_sim.jpg" alt="method" style="width: 80%;"></img>
 
         <br/>
         <br/>
