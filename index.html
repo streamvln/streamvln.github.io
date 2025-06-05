@@ -73,8 +73,8 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://streamvln.github.io/"
+                   class="external-link button is-normal is-rounded is-light">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
@@ -82,8 +82,8 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://streamvln.github.io/"
+                   class="external-link button is-normal is-rounded is-light">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
@@ -92,7 +92,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href="https://www.youtube.com/watch?v=vXls0dcav2Y"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -102,7 +102,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com"
+                <a href="https://streamvln.github.io/"
                    class="external-link button is-normal is-rounded is-light">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -399,9 +399,9 @@
 <section class="section is-small">
   <div class="container is-max-desktop">
     
-    <h2 class="title is-3 has-text-centered is-size-5-mobile title-with-lines">Real-World Experiments </h2>
+    <h2 class="title is-3 has-text-centered is-size-5-mobile title-with-lines">Real-World Experiments</h2>
 
-    <h3 class="title is-4 has-text-centered is-size-5-mobile">Simple Tasks</h3>
+    <h3 class="title is-4 has-text-centered is-size-5-mobile">Accurate Instruction Following</h3>
     <div class="columns is-multiline">
 
       <div class="column is-half">
@@ -434,7 +434,7 @@
     <br/>
 
 
-    <h3 class="title is-4 has-text-centered is-size-5-mobile">Challenging Long-Horizon Tasks</h3>
+    <h3 class="title is-4 has-text-centered is-size-5-mobile">Extreme Long-Horizon VLN Tasks</h3>
     <div class="columns is-multiline">
       <div class="column is-half">
         <div class="card">
@@ -465,7 +465,7 @@
     </div>
     <br/>
 
-    <h3 class="title is-4 has-text-centered is-size-5-mobile">Generalization to Novel Scenes</h3>
+    <h3 class="title is-4 has-text-centered is-size-5-mobile">Generalization across Diverse Scenes</h3>
     <div class="columns is-multiline">
       <div class="column is-half">
         <div class="card">
@@ -522,34 +522,40 @@
     </div>
     <br/>
 
-    <h3 class="title is-4 has-text-centered is-size-5-mobile">Visual Reasoning</h3>
-    <div class="columns is-multiline is-centered">
-      <!-- <div class="column is-half">
-        <div class="card">
-          <div class="card-image">
-            <video controls muted loop playsinline autoplay>
-              <source src="./static/videos/realworld_2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="card-content has-text-centered">
-            <p class="title is-5">Distinguish between Mona Lisa and Einstein</p>
+    <h3 class="title is-4 has-text-centered is-size-5-mobile">Visual Question Answering and Navigation</h3>
+    <div class="columns is-multiline is-centered" style="display: flex; flex-wrap: wrap;">
+      <!-- 第一列：图片卡片 -->
+      <div class="column is-half" style="flex: 1 0 50%; display: flex; align-items: stretch;">
+        <div class="card" style="flex: 1; display: flex; flex-direction: column;">
+          <div class="card-image" style="
+            flex-shrink: 0; /* 防止图片容器收缩 */
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            height: 300px; /* 固定高度，或根据内容自适应 */
+          ">
+            <img 
+              src="./static/images/qa.png" 
+              alt="method" 
+              style="max-width: 125%; max-height: 115%; object-fit: contain;"
+            >
           </div>
         </div>
-      </div> -->
-
-      <div class="column is-half">
-        <div class="card">
-          <div class="card-image">
-            <video controls muted loop playsinline autoplay>
+      </div>
+    
+      <!-- 第二列：视频卡片 -->
+      <div class="column is-half" style="flex: 1 0 50%; display: flex; align-items: stretch;">
+        <div class="card" style="flex: 1; display: flex; flex-direction: column;">
+          <div class="card-image" style="flex-shrink: 0;">
+            <video controls muted loop playsinline autoplay style="width: 100%; height: 260px; object-fit: cover;">
               <source src="./static/videos/visual_reasoning.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="card-content has-text-centered">
+          <div class="card-content has-text-centered flex-grow">
             <p class="title is-5">Distinguish between Mona Lisa and Einstein</p>
           </div>
         </div>
       </div>
-
     </div>
     <br/>
 
