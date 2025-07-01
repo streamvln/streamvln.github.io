@@ -144,7 +144,7 @@
 </section> -->
 
 <!-- video -->
-<section class="section">
+<section class="section" style="padding-top: 0rem; padding-bottom: 0rem;">
   <div class="columns is-centered has-text-centered" style="max-width: 1000px; margin: 0 auto;">
     <div class="column is-full-width">
       <!-- <h2 class="title is-2">Video</h2> -->
@@ -154,7 +154,7 @@
       </div>
       <br/>
       <h2 class="title is-5">TL; DR</h2>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-centered" style="line-height: 1.6;">
         StreamVLN is a streaming VLN framework that employs a hybrid slow-fast context modeling strategy to support multi-modal reasoning over interleaved vision, language and action inputs.
       </h2>
     </div>
@@ -213,13 +213,14 @@
         <h2 class="title is-3 has-text-centered is-size-5-mobile title-with-lines">Approach</h2>
         
         <h3 class="title is-4 has-text-centered is-size-5-mobile">Context Modeling</h3>
-        <img src="./static/images/overview.png" alt="method" style="width: 75%;"></img>
+        <!-- <img src="./static/images/overview.png" alt="method" style="width: 75%;"></img> -->
+        <img alt="overview" src="./static/images/overview.png" onmouseover="src='./static/images/overview.gif'" onmouseout="src='./static/images/overview.png'"/>
         <br/>
         <br/>
         <div class="content has-text-justified" style="font-size: 17px;margin: 0 auto;margin-bottom: 1em;">
           <p>
-            <b>StreamVLN</b> generates action outputs from continuous video input in an online, multi-turn dialogue manner. Built on LLaVA-Video as the foundational Video-LLM, we extend it for interleaved vision, language, and action modeling.
-            For both effective context modeling of long sequence and efficient computation for real-time interaction, StreamVLN has: <b>(1)</b> a fast-streaming dialogue context with a sliding-window KV cache; and <b>(2)</b> a slow-updating memory via token pruning.
+            <b>StreamVLN</b> generates action outputs from continuous video input in an online, multi-turn dialogue manner. Built on <b>LLaVA-Video</b> as the foundational Video-LLM, we extend it for interleaved vision, language, and action modeling.
+            For both effective context modeling of long sequence and efficient computation for real-time interaction, StreamVLN has: (1) a <b>fast-streaming</b> dialogue context with a sliding-window KV cache; and (2) a <b>slow-updating</b> memory via token pruning.
           </p>
         </div>
         <br/>
@@ -260,7 +261,7 @@
             </thead>
             <tbody>
               <tr>
-                <td style="border-bottom: 1px solid #ddd; padding: 0.75rem; text-align: left; vertical-align: middle;">Navigation (Expert)</td>
+                <td style="border-bottom: 1px solid #ddd; padding: 0.75rem; text-align: left; vertical-align: middle;">Navigation (Oracle)</td>
                 <td style="border-bottom: 1px solid #ddd; padding: 0.5rem; text-align: center; vertical-align: middle;">
                   <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
                     <div style="background: #dfdfdf; border-radius: 8px; padding: 0.5rem 0.5rem; box-shadow: 0 3px 9px rgba(0,0,0,0.1);">R2R</div>
@@ -326,8 +327,10 @@
         <h2 class="title is-3 is-size-5-mobile title-with-lines">Evaluation in Simulation</h2>
         
         <h3 class="title is-4 has-text-centered is-size-5-mobile">Quantitative Results</h3>
-        <img src="./static/images/exp_sim.jpg" alt="method" style="width: 80%;"></img>
+        <img src="./static/images/exp_sim.png" alt="method" style="width: 80%;"></img>
 
+        <!-- <iframe src="static\images\image.pdf" width="800px" height="2400px"></iframe> -->
+       
         <br/>
         <br/>
 
@@ -520,8 +523,7 @@
     <br/>
 
     <h3 class="title is-4 has-text-centered is-size-5-mobile">Visual Question Answering and Navigation</h3>
-    <div class="columns is-multiline is-centered" style="display: flex; flex-wrap: wrap;">
-      <!-- 第一列：图片卡片 -->
+    <!-- <div class="columns is-multiline is-centered" style="display: flex; flex-wrap: wrap;">
       <div class="column is-half" style="flex: 1 0 50%; display: flex; align-items: stretch;">
         <div class="card" style="flex: 1; display: flex; flex-direction: column;">
           <div class="card-image" style="
@@ -531,25 +533,37 @@
             align-items: center;
             height: 300px; /* 固定高度，或根据内容自适应 */
           ">
-            <img 
-              src="./static/images/qa.png" 
-              alt="method" 
-              style="max-width: 125%; max-height: 115%; object-fit: contain;"
-            >
+            <img src="./static/images/qa.png" alt="method" style="max-width: 125%; max-height: 115%; object-fit: contain;">
+            <div class="card-content has-text-centered flex-grow">
+              <p class="title is-5">Distinguish between Mona Lisa and Einstein</p>
+            </div>
           </div>
         </div>
-      </div>
+      </div> -->
     
-      <!-- 第二列：视频卡片 -->
-      <div class="column is-half" style="flex: 1 0 50%; display: flex; align-items: stretch;">
-        <div class="card" style="flex: 1; display: flex; flex-direction: column;">
-          <div class="card-image" style="flex-shrink: 0;">
-            <video controls muted loop playsinline autoplay style="width: 100%; height: 260px; object-fit: cover;">
-              <source src="./static/videos/visual_reasoning.mp4" type="video/mp4">
-            </video>
+      <div class="columns is-flex is-flex-wrap-nowrap" style="width: 100%; margin: 0;">
+        <div class="column is-half" style="flex: 1; min-width: 0; padding: 0.75rem;">
+          <div class="card">
+            <div class="card-image" style="flex-shrink: 0; display: flex; justify-content: center; align-items: center; height: 225px;">              
+              <img src="./static/images/vqa.png" alt="method" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </div>
+            <div class="card-content has-text-centered flex-grow">
+              <p class="title is-6">Q: "Describe the picture on the right.</p>
+              <p class="title is-6" style="color: red;">A: "Picture of the Mona Lisa."</p>
+            </div>
           </div>
-          <div class="card-content has-text-centered flex-grow">
-            <p class="title is-5">Distinguish between Mona Lisa and Einstein</p>
+        </div>
+      
+        <div class="column is-half" style="flex: 1; min-width: 0; padding: 0.75rem;">
+          <div class="card">
+            <div class="card-image">
+              <video controls muted loop playsinline autoplay style="width: 100%;">
+                <source src="./static/videos/visual_reasoning.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-content has-text-centered flex-grow">
+              <p class="title is-5">Distinguish between Mona Lisa and Einstein</p>
+            </div>
           </div>
         </div>
       </div>
